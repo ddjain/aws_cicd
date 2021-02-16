@@ -18,5 +18,4 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
-      - docker push $REPOSITORY_URI:$IMAGE_TAG
-      - docker push $REPOSITORY_URI:$IMAGE_TAG
+      - docker push 374310639155.dkr.ecr.us-east-2.amazonaws.com/nginx-test:latest
