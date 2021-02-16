@@ -1,7 +1,3 @@
-random-string()
-{
-    cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w ${1:-32} | head -n 1
-}
-echo "${random-string}" > ./test.html
+random=`openssl rand -hex 12`
+echo "${random}" > ./test.html
 nginx -g "daemon off;"
-
